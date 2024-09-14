@@ -132,16 +132,34 @@
         <!-- <div class="container mt-5"> -->
         <h2>Contact Us</h2>
         <form name="contact" netlify>
-            <p>
-              <label>Name <input type="text" name="name" /></label>
+            <!-- Name Field -->
+            <p class="mb-3">
+                <label>Name <input type="text" name="Name" placeholder="Enter your name"></label> 
             </p>
-            <p>
-              <label>Email <input type="email" name="email" /></label>
+
+            <!-- Email Field -->
+            <p class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="EmailID" placeholder="Enter your email">
             </p>
-            <p>
-              <button type="submit">Send</button>
+
+            <!-- Subject Field -->
+            <p class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="Subject" placeholder="Enter the subject">
             </p>
-          </form>
+
+            <!-- Message Field -->
+            <p class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" name="Message" placeholder="Enter your message"></textarea>
+            </p>
+
+            <!-- Send Button -->
+            <p class="text-end">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </p>
+        </form>
         <!-- </div> -->
     </div>
     <!-- <footer class="fixed-bottom my-4" style="background-color: aliceblue;">
